@@ -17,9 +17,9 @@ describe('Calculator', function() {
     expect(calculator.add("100")).toEqual(100);
   });
 
-  // it('returns the sum of numbers if two numbers passed', function() {
-  //   expect(calculator.add("1,6")).toEqual(7);
-  //   expect(calculator.add("0,1")).toEqual(1);
-  //   expect(calculator.add("-1,5")).toEqual(4);
-  //   expect(calculator.add("100,200")).toEqual(300);
-  // })
+  it('returns the sum of numbers if two numbers passed', function() {
+    expect(calculator.add("1,6")).toEqual(7);
+    expect(calculator.add("0,1")).toEqual(1);
+    expect(calculator.add("-1,5")).toEqual(4);
+    expect(calculator.add("100,200")).toEqual(300);
+  })
