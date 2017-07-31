@@ -2,6 +2,6 @@ function Calculator() {
 
 }
 
-Calculator.prototype.add = function(number) {
-  return number || 0;
+Calculator.prototype.add = function(stringNumbers) {
+  return Number(stringNumbers || 0);
 };
