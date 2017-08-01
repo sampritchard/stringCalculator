@@ -22,4 +22,9 @@ describe('Calculator', function() {
     expect(calculator.add("0,1")).toEqual(1);
     expect(calculator.add("-1,5")).toEqual(4);
     expect(calculator.add("100,200")).toEqual(300);
+  });
+
+  it('returns the sum from an unknown amount of numbers', function() {
+    expect(calculator.add("1,6,1,1,1,1,1,1")).toEqual(13);
+    expect(calculator.add("1,6,10")).toEqual(17);
   })
