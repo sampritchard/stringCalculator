@@ -29,7 +29,6 @@ describe('Calculator', function() {
     expect(calculator.add("1,6,10")).toEqual(17);
   });
 
-  it('returns the sum when spaces between numbers not just commas', function() {
-    expect(calculator.add("1 8 9, 10")).toEqual(28);
-    expect(calculator.add(" 1,2, 6")).toEqual(9);
+  it('returns the sum when new lines between numbers, instead of commas', function() {
+    expect(calculator.add("1\n2,10")).toEqual(13);
   })
